@@ -2,23 +2,24 @@ const nav = document.getElementById('nav');
 const curretPage = document.getElementById('currentPage').value;
 
 const renderNavItem = () => {
-  const navList = [{
-    name: 'Home',
-    href: './Index.html',
-    published: true,
-  },{
-    name: '要件定義書',
-    href: './RequirementDefinition.html',
-    published: true,
-  }, {
-    name: '基本設計書',
-    href: './Design.html',
-    published: true,
-  }, {
-    name: 'WIKI',
-    href: '#',
-    published: false,
-  }];
+  // const navList = [{
+  //   name: 'Home',
+  //   href: './Index.html',
+  //   published: true,
+  // },{
+  //   name: '要件定義書',
+  //   href: './RequirementDefinition.html',
+  //   published: true,
+  // }, {
+  //   name: '基本設計書',
+  //   href: './Design.html',
+  //   published: true,
+  // }, {
+  //   name: 'WIKI',
+  //   href: '#',
+  //   published: false,
+  // }];
+  const navList = [];
 
   const currentPage = document.getElementById('currentPage').value;
   const currentObject = navList.find(x =>x.name === currentPage);
